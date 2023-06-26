@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: flask-hello-world
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/susdas_quay_org/build-e2e-atpw-tenant/test-app-jxju/flask-hello-world@sha256:4b496ad16bda173927873474ed65d0d8b358f84ef94b518b3c9be0d510231c6b
         name: my-python
         ports:
         - containerPort: 8081
