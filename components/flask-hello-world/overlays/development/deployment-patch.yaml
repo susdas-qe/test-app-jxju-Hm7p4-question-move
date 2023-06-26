@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: flask-hello-world
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-atpw-tenant/test-app-jxju/flask-hello-world@sha256:4b496ad16bda173927873474ed65d0d8b358f84ef94b518b3c9be0d510231c6b
+        name: my-python
+        resources: {}
+status: {}
